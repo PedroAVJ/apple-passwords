@@ -1,4 +1,4 @@
-# Apple Passwords
+# Passwords
 
 Use the official iCloud Passwords extension in Google Chrome as a blind autofill
 path. The assistant operates the surrounding interface while saved passwords,

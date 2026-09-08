@@ -3,7 +3,7 @@ name: apple-passwords
 description: Use saved credentials through Apple's iCloud Passwords extension in Google Chrome, including authorized local extension pairing and a one-time human-approved unlock of the native Passwords app. Use when the user asks to sign in or autofill with Apple Passwords, or when a Chrome login is blocked by Apple Passwords pairing or unlock. Never use it to reveal or export saved credentials, fill a website through the Mac credential broker, recover an account, or perform unattended authentication.
 ---
 
-# Apple Passwords
+# Passwords
 
 Use Apple Passwords as a blind autofill path: the assistant may operate the surrounding Chrome and macOS interfaces, but it must never obtain the credential value.
 

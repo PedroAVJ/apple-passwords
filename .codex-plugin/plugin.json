@@ -1,6 +1,6 @@
 {
   "name": "apple-passwords",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Use Apple Passwords autofill in Google Chrome without exposing saved credentials to the assistant.",
   "author": {
     "name": "PedroAVJ",
@@ -8,11 +8,11 @@
   },
   "skills": "./skills/",
   "interface": {
-    "displayName": "Apple Passwords",
+    "displayName": "Passwords",
     "shortDescription": "Use saved credentials safely in Chrome.",
     "longDescription": "Use the official iCloud Passwords extension in Google Chrome and an optional approved native Passwords unlock broker while keeping saved secrets outside the assistant context.",
     "developerName": "PedroAVJ",
-    "category": "Productivity",
+    "category": "Utilities",
     "capabilities": [
       "Interactive"
     ],
