@@ -1,0 +1,6 @@
+interface:
+  display_name: "Apple Passwords"
+  short_description: "Use saved credentials safely in Chrome"
+  default_prompt: "Use $apple-passwords to use my saved credentials through the approved Apple Passwords autofill workflow."
+policy:
+  allow_implicit_invocation: true

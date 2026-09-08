@@ -1,0 +1,16 @@
+{
+  "name": "apple-passwords",
+  "version": "0.2.0",
+  "description": "Use Apple Passwords autofill in Google Chrome without exposing saved credentials to the assistant.",
+  "author": {
+    "name": "PedroAVJ",
+    "url": "https://github.com/PedroAVJ"
+  },
+  "skills": "./skills/",
+  "homepage": "https://github.com/PedroAVJ/apple-passwords",
+  "repository": "https://github.com/PedroAVJ/apple-passwords",
+  "license": "MIT",
+  "dependencies": [
+    "macbook@package-manager"
+  ]
+}
