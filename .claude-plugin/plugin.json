@@ -1,7 +1,7 @@
 {
   "name": "apple-passwords",
-  "displayName": "Passwords",
-  "version": "0.2.1",
+  "displayName": "Apple Passwords",
+  "version": "0.2.2",
   "description": "Use Apple Passwords autofill in Google Chrome without exposing saved credentials to the assistant.",
   "author": {
     "name": "PedroAVJ",

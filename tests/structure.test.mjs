@@ -4,7 +4,7 @@ import test from "node:test";
 
 const root = new URL("../", import.meta.url);
 const expectedName = "apple-passwords";
-const expectedSkills = ["apple-passwords"];
+const expectedSkills = ["autofill"];
 
 async function json(path) { return JSON.parse(await readFile(new URL(path, root), "utf8")); }
 
@@ -12,10 +12,12 @@ test("both clients share the published package contract", async () => {
   const [codex, claude, pkg] = await Promise.all([json(".codex-plugin/plugin.json"), json(".claude-plugin/plugin.json"), json("package.json")]);
   for (const manifest of [codex, claude, pkg]) {
     assert.equal(manifest.name, expectedName);
-    assert.equal(manifest.version, "0.2.1");
+    assert.equal(manifest.version, "0.2.2");
     assert.equal(manifest.license, "MIT");
   }
   assert.equal(codex.repository, `https://github.com/PedroAVJ/${expectedName}`);
+  assert.equal(codex.interface.displayName, "Apple Passwords");
+  assert.equal(claude.displayName, "Apple Passwords");
   assert.equal(claude.repository, codex.repository);
   assert.equal(codex.skills, "./skills/");
   assert.equal(claude.skills, codex.skills);
