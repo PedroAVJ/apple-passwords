@@ -4,7 +4,7 @@ import test from "node:test";
 
 const root = new URL("../", import.meta.url);
 const expectedName = "apple-passwords";
-const expectedSkills = ["autofill"];
+const expectedSkills = ["autofill", "credential-authorization"];
 
 async function json(path) { return JSON.parse(await readFile(new URL(path, root), "utf8")); }
 
@@ -12,7 +12,7 @@ test("both clients share the published package contract", async () => {
   const [codex, claude, pkg] = await Promise.all([json(".codex-plugin/plugin.json"), json(".claude-plugin/plugin.json"), json("package.json")]);
   for (const manifest of [codex, claude, pkg]) {
     assert.equal(manifest.name, expectedName);
-    assert.equal(manifest.version, "0.2.2");
+    assert.equal(manifest.version, "0.3.0");
     assert.equal(manifest.license, "MIT");
   }
   assert.equal(codex.repository, `https://github.com/PedroAVJ/${expectedName}`);
@@ -22,6 +22,11 @@ test("both clients share the published package contract", async () => {
   assert.equal(codex.skills, "./skills/");
   assert.equal(claude.skills, codex.skills);
   assert.equal(codex.interface.logo, "./assets/icon.svg");
+  assert.equal(codex.interface.composerIcon, "./assets/icon.svg");
+  assert.equal(codex.interface.brandColor, "#16785D");
+  assert.equal(codex.mcpServers, "./.mcp.json");
+  assert.equal(claude.mcpServers, codex.mcpServers);
+  assert.equal(claude.dependencies, undefined);
   assert.deepEqual(codex.interface.screenshots, []);
   assert.ok((await stat(new URL(codex.interface.logo, root))).size > 100);
 });

@@ -9,3 +9,8 @@ The first-party source, portable packaging changes, and original vector artwork
 are released under the MIT license in `LICENSE`. No user credential, account
 configuration, device snapshot, or operational screenshot is part of this
 public package.
+
+The `credential-authorization` skill, `native/MacBookCredentialBroker.swift`,
+`runtime/bin/macbook-credential-broker`, the broker scripts, `.mcp.json`, and the
+broker tests moved unchanged from the MIT-licensed `PedroAVJ/macbook` repository
+at commit `23745c9775f1463a3a2996326178b634685d3953`.
