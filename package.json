@@ -1,6 +1,6 @@
 {
   "name": "apple-passwords",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "private": true,
   "type": "module",
   "description": "Use Apple Passwords autofill in Google Chrome and authorize one-time native Mac login password fills without exposing credentials to the assistant.",

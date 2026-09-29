@@ -1,6 +1,6 @@
 {
   "name": "apple-passwords",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Use Apple Passwords autofill in Google Chrome and authorize one-time native Mac login password fills without exposing credentials to the assistant.",
   "author": {
     "name": "PedroAVJ",
@@ -13,7 +13,7 @@
     "shortDescription": "Use saved credentials safely in Chrome and native Mac prompts.",
     "longDescription": "Use the official iCloud Passwords extension in Google Chrome, plus a human-approved credential broker that fills the Mac login password into signed native secure dialogs one time, while keeping every saved secret outside the assistant context.",
     "developerName": "PedroAVJ",
-    "category": "Utilities",
+    "category": "Productivity",
     "capabilities": [
       "Interactive",
       "Write"
